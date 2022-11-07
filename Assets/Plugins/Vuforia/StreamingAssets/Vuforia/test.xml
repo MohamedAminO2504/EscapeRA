@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="fb18" size="400.000000 631.000000" />
+    <ImageTarget name="fb15" size="210.000000 337.000000" />
+    <ImageTarget name="fb16" size="400.000000 631.000000" />
+    <ImageTarget name="fb1" size="975.000000 1541.000000" />
+    <ImageTarget name="Fruits-basket" size="400.000000 630.000000" />
+  </Tracking>
+</QCARConfig>
