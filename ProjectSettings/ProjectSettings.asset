@@ -5,6 +5,7 @@ PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 22
   productGUID: 0974a0cbddd17114b96bbf7016f4616f
+  productGUID: 50991d598e8fc5c49ad8660c8b2fc7f7
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -921,6 +922,7 @@ PlayerSettings:
       PointOfService: False
       RecordedCallsFolder: False
       Contacts: False
+      Proximity: False
       InternetClient: True
       Proximity: False
       CodeGeneration: False
