@@ -63,3 +63,7 @@ crashlytics-build.properties
 
 
 /ProjectSettings/*
+
+UserSettings/EditorUserSettings.asset
+
+UserSettings/
