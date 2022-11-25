@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Niwa/Demo - Acceuil.unity
     guid: b7b78250beff7bc478bc63c744807782
   - enabled: 1
-    path: Assets/Niwa/Main Menu.unity
+    path: Assets/Niwa/Demo - Main Menu.unity
     guid: 21c7dc244b830c94ab1177d30f49149e
   - enabled: 1
     path: Assets/Niwa/Demo - Rooms.unity

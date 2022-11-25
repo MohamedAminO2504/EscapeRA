@@ -8,11 +8,49 @@ public class EscapeSceneManager : MonoBehaviour
    
     public GameObject pause;
     public GameObject inGame;
+    public GameObject exitVR;
+    public GameObject vRButtons;
 
     public AudioSource audioSource;
+
+    private GyroControle[] gyros;
+
+    public void ShowExitVR(){
+        exitVR.SetActive(true);
+        vRButtons.SetActive(false);
+    }
+    public void HideExitVR(){
+        exitVR.SetActive(false);
+        vRButtons.SetActive(true);
+    }
+
+    public void ExitAllVR(){
+        foreach (var item in gyros)
+        {
+            item.DiseableGyro();
+        }
+    }
+    
     private void Start() {
         PlaySong();
+        gyros = FindObjectsOfType<GyroControle>();
+        HideAllEffectGyro();
     }
+
+    public void ShowAllEffectGyro(){
+        foreach (var item in gyros)
+        {
+            item.DisplayFx();
+        }
+    }
+    public void HideAllEffectGyro(){
+        foreach (var item in gyros)
+        {
+            item.HideFx();
+        }
+    }
+
+
     public void Pause(){
         pause.SetActive(true);
                 inGame.SetActive(false);

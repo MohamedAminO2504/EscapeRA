@@ -16,6 +16,17 @@ public class GyroControle : MonoBehaviour
     public GameObject carte;
 
     public Transform roomGyro;
+    public GameObject fx;
+
+    public void DisplayFx(){
+        if(fx)
+            fx.SetActive(true);
+    }
+
+    public void HideFx(){
+        if(fx)
+            fx.SetActive(false);
+    }
 
     // Update is called once per frame
    public void EnableGyro()
@@ -33,8 +44,10 @@ public class GyroControle : MonoBehaviour
         }else{
             gyroEnabled = false;
 
-        }     
-                    camera.m_Priority = 50;
+        }    
+        FindObjectOfType<EscapeSceneManager>().ShowExitVR(); 
+        HideFx();
+        camera.m_Priority = 50;
         if(roomGyro && room)
             room.transform.SetParent(roomGyro);
    
@@ -51,8 +64,10 @@ public class GyroControle : MonoBehaviour
         camera.m_Priority = 0;
         if(carte && room)
         room.transform.SetParent(carte.transform);
+        FindObjectOfType<EscapeSceneManager>().HideExitVR(); 
 
         gyroEnabled = false;
+        DisplayFx();
     }
 
     private void Update() {
