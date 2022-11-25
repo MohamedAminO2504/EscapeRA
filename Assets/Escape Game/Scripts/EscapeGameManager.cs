@@ -34,10 +34,10 @@ public class EscapeGameManager : MonoBehaviour
     }
 
     public void UseCart(CartItemRA obj){
-        CartItemRA cartItemRA = obj.GetComponent<CartItemRA>();
-        currentCartItem = cartItemRA;
-        item = cartItemRA.current;
-        UseItem();
+      //  CartItemRA cartItemRA = obj.GetComponent<CartItemRA>();
+      //  currentCartItem = cartItemRA;
+      //  item = cartItemRA.current;
+      //  UseItem();
     }
 
     public void SetItem(ItemRA i){
@@ -46,7 +46,7 @@ public class EscapeGameManager : MonoBehaviour
     }
     
     public void UseItem(){
-        if(interaction.itemAttendu == item){
+     /*   if(interaction.itemAttendu == item){
             Debug.Log("Bravo");
             interaction.Use();
         }else{
@@ -55,7 +55,7 @@ public class EscapeGameManager : MonoBehaviour
         
         item = null;
         HideInteraction();
-       uiInteraction.SetActive(false);
+       uiInteraction.SetActive(false);*/
     }
     
     public void HideInteraction(){

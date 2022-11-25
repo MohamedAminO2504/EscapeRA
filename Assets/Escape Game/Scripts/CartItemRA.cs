@@ -6,33 +6,41 @@ using UnityEngine.UI;
 public class CartItemRA : MonoBehaviour
 {
 
-    public List<ItemRA> items;
-    public ItemRA current;
-
-    private ItemRAManager manager;
-    public GameObject uiCartItem;
-    public Text description;
+    public CollectibleObject currentObject;
+    public GameObject conteneur;
+    public List<Text> nomObjet;
+    public List<Text> descriptionObjet;
+    public Image img;
 
     void Start() {
-
-        manager = (ItemRAManager)FindObjectOfType(typeof(ItemRAManager));
+        //conteneur.SetActive(false);
     }
 
-    public void SetItem(ItemRA item){
-        current = item;
-        foreach (var i in items)
+    public void SetCurrentObject(CollectibleObject currentObject){
+        if(this.currentObject != null)
+            this.currentObject.Ranger();
+        this.currentObject = currentObject;
+        currentObject.inCard = true;
+        DisplayObject();
+
+    }
+
+    public void DisplayObject(){
+        if(currentObject == null)
+            return;
+
+        currentObject.gameObject.transform.SetParent(conteneur.transform);
+        currentObject.transform.localPosition = new Vector3(0,0,0);
+        currentObject.transform.localScale *= currentObject.sizeMultiplicateur;
+        foreach (var item in nomObjet)
         {
-            if(i.item == current.item){
-                i.gameObject.SetActive(true);
-            }else{
-                i.gameObject.SetActive(false);
-            }
+            item.text = currentObject.nom;
         }
-        //AfficheDescription();
+        foreach (var item in descriptionObjet)
+        {
+            item.text = currentObject.description;
+        }
+
     }
 
-    public void AfficheDescription(){
-        uiCartItem.SetActive(true);
-        description.text = current.item.description;
-    }
 }

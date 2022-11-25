@@ -27,9 +27,10 @@ public class MecanismeDiscution : MonoBehaviour
     }
 
     private void OnMouseDown() {
-        if(!active)
+        if(!active && !end)
             return;
-        cam.m_Priority = 30;
+        if(cam)
+            cam.m_Priority = 50;
         UI.SetActive(true);
         text.text = dialogues[index];
         ActiveCurrentAction();

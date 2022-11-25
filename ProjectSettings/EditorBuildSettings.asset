@@ -6,6 +6,29 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Niwa/Escape.unity
-    guid: e6d7e943628582347b20b2004ba01151
-  m_configObjects: {}
+    path: Assets/Niwa/Demo - Acceuil.unity
+    guid: b7b78250beff7bc478bc63c744807782
+  - enabled: 1
+    path: Assets/Niwa/Main Menu.unity
+    guid: 21c7dc244b830c94ab1177d30f49149e
+  - enabled: 1
+    path: Assets/Niwa/Demo - Rooms.unity
+    guid: a19dcb11bc9974f4590d58feafa184cb
+  - enabled: 1
+    path: Assets/Niwa/Demo - Mecanisme.unity
+    guid: 8d998f075daedff49b43aa87792b1417
+  - enabled: 1
+    path: Assets/Niwa/Gyro.unity
+    guid: ca4e77022acaf1c419677ea04c42aba1
+  - enabled: 1
+    path: Assets/Niwa/Demo - Item.unity
+    guid: 92ea5e6feba47cc45ac7083613602940
+  - enabled: 1
+    path: Assets/Escape Game/Scenes/SCENE 2.unity
+    guid: 61c446c64899ac4439594d6793013cc5
+  - enabled: 1
+    path: Assets/Niwa/Demo - Start Info.unity
+    guid: 04f81364761bbdd4797d376f77995493
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: fda6fe81719b5a0439a866acf4ef9000,
+      type: 2}

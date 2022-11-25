@@ -30,7 +30,7 @@ public class CodeMecanisme : MonoBehaviour
     private void OnMouseDown() {
         if(!active)
             return;
-        cam.m_Priority = 30;
+        cam.m_Priority = 50;
         UI.SetActive(true);
     }
 

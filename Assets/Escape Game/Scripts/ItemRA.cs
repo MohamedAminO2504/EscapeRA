@@ -42,7 +42,7 @@ public class ItemRA : MonoBehaviour
     }
 
     private void OnMouseDown() {
-        lieumanager.log("je touche "+this.name);
+       // lieumanager.log("je touche "+this.name);
         Select();
         Show();
         DisplayUI();

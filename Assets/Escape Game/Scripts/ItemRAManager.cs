@@ -11,28 +11,28 @@ public class ItemRAManager : MonoBehaviour
     private CameraManager cameraManager;
 
     private void Start() {
-        cameraManager = (CameraManager)FindObjectOfType(typeof(CameraManager));
+       // cameraManager = (CameraManager)FindObjectOfType(typeof(CameraManager));
     }
 
     public void SetItemInCartItemRA1(){
-        cartItem1.SetItem(currentItem);
-                cameraManager.SwitchViewToMainCamera(currentItem);
+       // cartItem1.SetItem(currentItem);
+       //         cameraManager.SwitchViewToMainCamera(currentItem);
 
     }
     
     public void SetCurrentItem(ItemRA item){
-        currentItem = item;
+      //  currentItem = item;
     }
 
     public void DisplayUIItem(){
-        ui.gameObject.SetActive(true);
-        ui.DisplayName(currentItem.name);
+       // ui.gameObject.SetActive(true);
+       // ui.DisplayName(currentItem.name);
     }
 
     public void CancelAction(){
-        cameraManager.SwitchViewToMainCamera(currentItem);
-        currentItem = null;
-        ui.gameObject.SetActive(false);
+       // cameraManager.SwitchViewToMainCamera(currentItem);
+       // currentItem = null;
+       // ui.gameObject.SetActive(false);
 
     }
 

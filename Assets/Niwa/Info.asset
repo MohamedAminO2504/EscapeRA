@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa69986af4aa9841a667eef843d0920, type: 3}
+  m_Name: Info
+  m_EditorClassIdentifier: 
+  titre: Intro
+  description: "\"J'ai tellement hate ! \nDemain je prend l'avions pour la premiere
+    fois avec mes parents pour feter No\xEBl \xE0 New York ! \nJe dois me reveiller
+    plustot que d'habitude, faut pas que j'oublie de modifier mon reveil sinon ...
+    j'ai peur ... que ... mes parents ... parte sans moi ...\""
+  info1: 'Poser la carte suivante : '
+  info2: 
+  image: {fileID: 21300000, guid: f5af97fa281193249bdff506d3ee8d91, type: 3}
+  image2: {fileID: 0}

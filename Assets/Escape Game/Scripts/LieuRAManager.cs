@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LieuRAManager : MonoBehaviour
 {
-    public Slider sliderRotate;
+   /* public Slider sliderRotate;
     public CartLieuRA cartLieu1;
     public CartLieuRA cartLieu2;
     public CartLieuRA cartLieu3;
@@ -66,6 +66,6 @@ public class LieuRAManager : MonoBehaviour
         float y = plusProcheLieu.currentRotateContent + sliderRotate.value;
         plusProcheLieu.content.transform.eulerAngles = new Vector3( plusProcheLieu.content.transform.eulerAngles.x, y, plusProcheLieu.content.transform.eulerAngles.z );
     }
-
+*/
 
 }

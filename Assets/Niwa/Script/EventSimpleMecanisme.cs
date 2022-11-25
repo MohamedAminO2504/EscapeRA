@@ -32,7 +32,7 @@ public class EventSimpleMecanisme : MonoBehaviour
         if(!active)
             return;
         
-        cam.m_Priority = 30;
+        cam.m_Priority = 50;
         UI.SetActive(true);
     }
 
