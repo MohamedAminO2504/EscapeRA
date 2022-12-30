@@ -27,7 +27,7 @@ public class MecanismeDiscution : MonoBehaviour
     }
 
     private void OnMouseDown() {
-        if(!active && !end)
+        if(!active || end)
             return;
         if(cam)
             cam.m_Priority = 50;

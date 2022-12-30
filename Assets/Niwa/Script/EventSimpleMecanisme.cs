@@ -34,6 +34,8 @@ public class EventSimpleMecanisme : MonoBehaviour
         
         cam.m_Priority = 50;
         UI.SetActive(true);
+                cam.gameObject.SetActive(true);
+
     }
 
     public void Actionne(){
@@ -48,7 +50,9 @@ public class EventSimpleMecanisme : MonoBehaviour
 
     public void Annuler() {
 
-        cam.m_Priority = 10;
+        cam.m_Priority = 0;
         UI.SetActive(false);
+                cam.gameObject.SetActive(false);
+
     }
 }

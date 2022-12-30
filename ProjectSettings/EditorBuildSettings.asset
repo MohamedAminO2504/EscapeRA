@@ -6,29 +6,53 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Niwa/Demo - Acceuil.unity
+    path: Assets/Niwa/Scenes/Demo - Acceuil.unity
     guid: b7b78250beff7bc478bc63c744807782
   - enabled: 1
-    path: Assets/Niwa/Demo - Main Menu.unity
+    path: Assets/Niwa/Scenes/Demo - Main Menu.unity
     guid: 21c7dc244b830c94ab1177d30f49149e
   - enabled: 1
-    path: Assets/Niwa/Demo - Rooms.unity
+    path: Assets/Niwa/Scenes/Demo - Rooms.unity
     guid: a19dcb11bc9974f4590d58feafa184cb
   - enabled: 1
-    path: Assets/Niwa/Demo - Mecanisme.unity
+    path: Assets/Niwa/Scenes/Demo - Mecanisme.unity
     guid: 8d998f075daedff49b43aa87792b1417
   - enabled: 1
-    path: Assets/Niwa/Gyro.unity
+    path: Assets/Niwa/Scenes/Gyro.unity
     guid: ca4e77022acaf1c419677ea04c42aba1
   - enabled: 1
-    path: Assets/Niwa/Demo - Item.unity
+    path: Assets/Niwa/Scenes/Demo - Item.unity
     guid: 92ea5e6feba47cc45ac7083613602940
   - enabled: 1
     path: Assets/Escape Game/Scenes/SCENE 2.unity
     guid: 61c446c64899ac4439594d6793013cc5
   - enabled: 1
-    path: Assets/Niwa/Demo - Start Info.unity
+    path: Assets/Niwa/Scenes/Demo - Start Info.unity
     guid: 04f81364761bbdd4797d376f77995493
+  - enabled: 1
+    path: Assets/Niwa/Scenes/Demo - Vide.unity
+    guid: af99ead19f985984c8a5a8325ebd35a7
+  - enabled: 1
+    path: Assets/Niwa/Scenes/Demo - Mecanisme Coffre.unity
+    guid: adbd65d22aee6c146acfab555b50fde7
+  - enabled: 1
+    path: Assets/Niwa/Scenes/Demo - Mecanisme Discusion.unity
+    guid: 793601700d91d7c43a8a4a3f43e67de5
+  - enabled: 1
+    path: Assets/Niwa/Scenes/Demo - Mecanisme Simple.unity
+    guid: af9c81393ab078842a402182bb775d2f
+  - enabled: 1
+    path: Assets/Niwa/Scenes/Demo - Mecanisme Timer.unity
+    guid: 048f1ad263a34134fa935a3f53084acc
+  - enabled: 1
+    path: Assets/Niwa/Scenes/Demo - Mecanisme Clef Serrure.unity
+    guid: 49e12d79e498d704b9d6fc75492801a0
+  - enabled: 1
+    path: Assets/Niwa/Scenes/Demo - Mecanisme Walk.unity
+    guid: e6b550d00e8233c48804eb0593b5e22d
+  - enabled: 1
+    path: Assets/Niwa/Scenes/Demo - Ground Detection.unity
+    guid: 5f8c7b35e05365146851c4c0b30dae67
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: fda6fe81719b5a0439a866acf4ef9000,
       type: 2}

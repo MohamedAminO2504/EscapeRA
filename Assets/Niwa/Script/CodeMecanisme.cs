@@ -31,7 +31,15 @@ public class CodeMecanisme : MonoBehaviour
         if(!active)
             return;
         cam.m_Priority = 50;
+        cam.gameObject.SetActive(true);
         UI.SetActive(true);
+    }
+
+    public void Quit(){
+        cam.gameObject.SetActive(false);
+        UI.SetActive(false);
+        cam.m_Priority = 0;
+        current = "";
     }
 
     public void Add(string val){

@@ -47,7 +47,10 @@ public class CollectibleObject : MonoBehaviour
 
         transform.localScale = scale;
         inCard = false;
-        FindObjectOfType<UIManager>().HideRangerCarte();
+                UIManager uimanager = FindObjectOfType<UIManager>();
+
+       uimanager.HideRangerCarte();
+        uimanager.RestCartText();
 
 
     }

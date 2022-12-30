@@ -10,10 +10,12 @@ public class EscapeSceneManager : MonoBehaviour
     public GameObject inGame;
     public GameObject exitVR;
     public GameObject vRButtons;
+    public GameObject useItemUi;
 
     public AudioSource audioSource;
 
     private GyroControle[] gyros;
+    private Interaction currentInteraction;
 
     public void ShowExitVR(){
         exitVR.SetActive(true);
@@ -22,6 +24,26 @@ public class EscapeSceneManager : MonoBehaviour
     public void HideExitVR(){
         exitVR.SetActive(false);
         vRButtons.SetActive(true);
+    }
+
+    public void SetCurrentInteraction(Interaction i){
+        currentInteraction = i;
+    }
+
+    public void DisplayUseItemUI(){
+        useItemUi.SetActive(true);
+    }
+
+    public void UseItem(int i){
+        currentInteraction.Use(i);
+        useItemUi.SetActive(false);
+        currentInteraction = null;
+    }
+
+    public void ExitUseItem(){
+        useItemUi.SetActive(false);
+        currentInteraction.Exit();
+        currentInteraction = null;
     }
 
     public void ExitAllVR(){

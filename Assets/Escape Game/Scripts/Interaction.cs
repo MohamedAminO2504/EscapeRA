@@ -16,10 +16,12 @@ public class Interaction : MonoBehaviour
 
     private CameraManager cameraManager;
     public bool active = false;
-    public GameObject UI;
+    public float waitAfterResolve;
+    public bool destroyItemAfter;
 
     private void Start() {
-      
+      if(cam)
+        cam.gameObject.SetActive(false);
     }
 
 
@@ -28,31 +30,40 @@ public class Interaction : MonoBehaviour
             return;
         if(cam)
         cam.m_Priority = 50;
-                CartItemRA[] cartesItem = FindObjectsOfType<CartItemRA>();
-        int i = 0;
-        foreach (var item in UI.GetComponentsInChildren<Text>())
-        {   
-            if(cartesItem[i].currentObject == null)
-                item.text = "Carte vide";
-            else
-                item.text = cartesItem[i].currentObject.nom;
-            i++;
-        }
-        UI.SetActive(true);
+        
+        
+        UIManager uimanager = FindObjectOfType<UIManager>();
+        EscapeSceneManager escapeSceneManager = FindObjectOfType<EscapeSceneManager>();
+        escapeSceneManager.SetCurrentInteraction(this);
+        escapeSceneManager.DisplayUseItemUI();
+    
     }
 
-
     public void Exit(){
-        UI.SetActive(false);
         cam.m_Priority = 0;
     }
 
     public void Use(int i){
         CartItemRA[] cartesItem = FindObjectsOfType<CartItemRA>();
-        if(cartesItem[i].currentObject == key){
+        UIManager uimanager = FindObjectOfType<UIManager>();
+                Debug.Log("USE "+uimanager.cartesItem[i].currentObject.nom);
+
+        if(uimanager.cartesItem[i].currentObject == key){
             events.Invoke();
+            if(destroyItemAfter){
+                key.Ranger();
+                key.gameObject.SetActive(false);
+                uimanager.cartesItem[i].currentObject = null;
+            }
         }
+        uimanager.RestCartText();
+
+        StartCoroutine(ExitWithDelai());
     }
 
+    IEnumerator ExitWithDelai(){
+        yield return new WaitForSeconds(waitAfterResolve);
+        Exit();
+    }
 
 }

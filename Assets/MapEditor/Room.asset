@@ -12,19 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e84af09dffe3ce4bb3f0dfbbc1d1eb6, type: 3}
   m_Name: Room
   m_EditorClassIdentifier: 
-  sol: {fileID: 1394291997954630, guid: a867ece65ba97e6409dea29d75d14f1f, type: 3}
-  mur: {fileID: 1733255387342298, guid: 04fb1161a540e7d4486270d7b1d9e4e8, type: 3}
-  fournitures:
-  - {fileID: 1539990738516132, guid: ac06555c9097c3b4b82084396456c1e2, type: 3}
-  - {fileID: 1523432075862608, guid: 1e207996b2dd8f140868ec4d0b12ed57, type: 3}
-  - {fileID: 1523432075862608, guid: 1e207996b2dd8f140868ec4d0b12ed57, type: 3}
-  - {fileID: 1152902905978700, guid: e0b61ce3f1a34734d9622da0851ed3b6, type: 3}
-  - {fileID: 1648582645643066, guid: 41d36d109b665f944a5d403a23a97965, type: 3}
-  - {fileID: 1038504818814986, guid: eb6a12005bffaf147b8c684f5a38111a, type: 3}
-  - {fileID: 1852376700714276, guid: b883434401ed5834c9aeb7df03401570, type: 3}
-  - {fileID: 1489447674229710, guid: 85cc2c8468657134c95efef459326ba6, type: 3}
-  - {fileID: 1586724028745856, guid: 2f63ea1063f3f754292b60bba88484ee, type: 3}
-  - {fileID: 1286845148648606, guid: 21050cbfbbb8f074db76db88d8c088e6, type: 3}
+  sol: {fileID: 163852, guid: cda897b14cb956e4ea1e58ed4d431788, type: 3}
+  mur: {fileID: 183144, guid: ae1644867a2400a4d8cb2486d081859b, type: 3}
+  fournitures: []
   wallDeco:
   - {fileID: 1080697787843918, guid: a2aae7d9084a668459e275da1ace29e4, type: 3}
   - {fileID: 1571368195032682, guid: 930191887b0a1a14eba7971c805295fe, type: 3}

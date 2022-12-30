@@ -1,15 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEditor;
-/*
-[CustomEditor(typeof(Map))]
-public class MapEditor : Editor 
-{
 
-    public void OnInspectorGUI() {
+[CustomEditor(typeof(Map))]
+public class MapEditor : Editor {
+    public override void OnInspectorGUI() {
         base.OnInspectorGUI();
-        
         Map map = (Map) target;
 
          if (GUILayout.Button("Create Piece")) //10
@@ -24,7 +22,6 @@ public class MapEditor : Editor
 
                 map.RemoveRoom(item);
             }  
-        }
-
+        } 
     }
-}*/
+}
